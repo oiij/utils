@@ -1,18 +1,18 @@
 {
-  "name": "typescript-starter",
+  "name": "@oiij/utils",
   "type": "module",
-  "version": "0.1.0-beta.0",
+  "version": "0.0.1",
   "description": "",
   "author": "oiij",
   "license": "MIT",
-  "homepage": "https://github.com/oiij/typescript-starter",
+  "homepage": "https://github.com/oiij/utils",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oiij/typescript-starter.git"
+    "url": "git@github.com:oiij/utils.git"
   },
-  "bugs": "https://github.com/oiij/typescript-starter/issues",
+  "bugs": "https://github.com/oiij/utils/issues",
   "keywords": [
-    "typescript-starter"
+    "@oiij/utils"
   ],
   "sideEffects": false,
   "exports": {
@@ -20,13 +20,65 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./array": {
+      "types": "./dist/array.d.ts",
+      "import": "./dist/array.js",
+      "require": "./dist/array.cjs"
+    },
+    "./color": {
+      "types": "./dist/color.d.ts",
+      "import": "./dist/color.js",
+      "require": "./dist/color.cjs"
+    },
+    "./date": {
+      "types": "./dist/date.d.ts",
+      "import": "./dist/date.js",
+      "require": "./dist/date.cjs"
+    },
+    "./dom": {
+      "types": "./dist/dom.d.ts",
+      "import": "./dist/dom.js",
+      "require": "./dist/dom.cjs"
+    },
+    "./is": {
+      "types": "./dist/is.d.ts",
+      "import": "./dist/is.js",
+      "require": "./dist/is.cjs"
+    },
+    "./math": {
+      "types": "./dist/math.d.ts",
+      "import": "./dist/math.js",
+      "require": "./dist/math.cjs"
+    },
+    "./number": {
+      "types": "./dist/number.d.ts",
+      "import": "./dist/number.js",
+      "require": "./dist/number.cjs"
+    },
+    "./object": {
+      "types": "./dist/object.d.ts",
+      "import": "./dist/object.js",
+      "require": "./dist/object.cjs"
+    },
+    "./random": {
+      "types": "./dist/random.d.ts",
+      "import": "./dist/random.js",
+      "require": "./dist/random.cjs"
+    },
+    "./string": {
+      "types": "./dist/string.d.ts",
+      "import": "./dist/string.js",
+      "require": "./dist/string.cjs"
     }
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "README.md",
+    "dist",
+    "package.json"
   ],
   "scripts": {
     "dev": "tsup --watch",
@@ -46,8 +98,7 @@
     "cz": "czg",
     "commit": "git pull && git add -A && pnpm cz && git push",
     "link": "pnpm link --global",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "npx simple-git-hooks"
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.1.1",

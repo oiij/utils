@@ -1,4 +1,4 @@
-# library-starter
+# @oiij/utils
 
 Features:
 
@@ -6,15 +6,21 @@ Features:
 - Test with [vitest](https://vitest.dev)
 
 # Usage
-### 本地包测试
-当前目录下执行：
+
+## Install
+
 ```bash
-pnpm link --global --dir=./
+pnpm add @oiij/utils
 ```
-目标目录：
-```bash
-pnpm link --global <package name>
+
+## Use
+
+```ts
+import { isFunction } from '@oiij/utils/is'
+isFunction(1) // false
+isFunction(() => {}) // true
 ```
-## License
+
+# License
 
 MIT
